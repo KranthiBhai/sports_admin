@@ -17,6 +17,7 @@ export default function OrdersPanel({ title, path }) {
     setSearch(data);
   };
 
+
   return (
     <div className=" w-full h-full flex flex-col mt-6">
       <TitleHeader title={title} path={path} onSearch={handleSearch} />
