@@ -166,7 +166,7 @@ export default function Shell({ children }) {
             })}
         </div>
       </div>
-      <div className=" h-full flex-1 overflow-hidden">
+      <div className=" h-full flex flex-col flex-1 overflow-hidden">
         <div className=" bg-white px-4 h-20 flex items-center justify-between">
           <div className=" flex items-center gap-x-2 h-20">
             {topNavigation.map((menu, index) => {
@@ -177,7 +177,7 @@ export default function Shell({ children }) {
                   className=" h-full flex items-center justify-center group relative px-3 py-4 cursor-pointer"
                 >
                   <h4
-                    className={`${" font-[500] group-hover:text-[#182822]"} ${
+                    className={`${" text-base font-[500] group-hover:text-[#182822]"} ${
                       menu.current === currentPage.split("/")[1]
                         ? " text-[#182822] "
                         : " text-black/60"
@@ -202,7 +202,7 @@ export default function Shell({ children }) {
             />
           </div>
         </div>
-        <div className=" w-full h-full">{children}</div>
+        <div className=" flex-1 overflow-auto">{children}</div>
       </div>
     </div>
   );

@@ -40,3 +40,8 @@ body {
     text-stroke-color: white;
   }
 }
+
+.customSelect button {
+  width: 100% !important;
+}
+
